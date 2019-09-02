@@ -1,5 +1,3 @@
-<h1>id: <%= task.id %>タスクリストの変更</h1>
-
 <%= form_with(model: task, local: true) do |f| %>
   <% if task.errors.any? %>
     <div id="error_explanation">
@@ -19,5 +17,5 @@
   <%= f.label :status, 'ステータス' %>
   <%= f.text_field :status %>
   
-  <%= f.submit '変更' %>
+  <%= f.submit '登録' %>
 <% end %>
